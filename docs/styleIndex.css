@@ -1,0 +1,241 @@
+/*Html element==============================================================================================================================*/
+body {
+  font-family: arial;
+  font-size: 14px;
+  background-color: tomato;
+}
+
+
+
+
+/*Id==============================================================================================================================*/
+#BodyId {
+  background-color: tomato;
+}
+
+#ContentBoxId {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 10px;
+  background-color: beige;
+  border-style: solid;
+  border-width: 2px;
+  border-color: maroon;
+  border-radius: 1em;
+  overflow: hidden;
+  width: 1000px;
+}
+
+#TitleId {
+  color: maroon;
+}
+
+#ProductId {
+  padding: 5px;
+}
+
+#ProductDescriptionId {
+  color: black;
+}
+
+#ProductImageId {
+  min-height: 300px;
+  max-height: 600px;
+  min-width: 500px;
+  max-width: 800px;
+}
+
+#ProductCardId {
+  min-height: 200px;
+  border-style: dashed;
+  border-color: tomato;
+  border-width: 2px;
+  height: auto;
+  padding: 10px;
+  margin: 20px;
+}
+
+#ProductCardTitleId {
+  translate: -5px -20px;
+  background-color: beige;
+  width: 50px;
+}
+
+#ProductCardTitleId p {
+  margin: 0;
+  text-align: center;
+  color: maroon;
+  padding: 0;
+}
+
+#ProductCardContent {
+  border-style: solid;
+  border-width: 1px;
+  border-color: maroon;
+  display: grid;
+  grid-template-rows: auto;
+  grid-auto-flow: column;
+}
+
+#ProductCard {
+  margin: 5px;
+  height: 200px;
+  width: 350px;
+}
+
+
+
+
+/*Class==============================================================================================================================*/
+
+/*constraint and alignment*/
+.flex {
+  display: flex;
+}
+
+.flexHorizontal {
+  flex-direction: row;
+}
+
+.flexVertical {
+  flex-direction: column;
+}
+
+.flexAlignStart {
+  justify-content: flex-start;
+}
+
+.flexAlignCenter {
+  justify-content: center;
+}
+
+.flexAlignEnd {
+  justify-content: flex-end;
+}
+
+.flexAlignSpaceAround {
+  justify-content: space-around;
+}
+
+.flexAlignSpaceBetween {
+  justify-content: space-between;
+}
+
+
+
+
+/*Text Setting*/
+/*Text Alignement*/
+.textAlignCenter {
+  text-align: center;
+}
+
+.textAlignLeft {
+  text-align: start;
+}
+
+.textAlignRight {
+  text-align: center;
+}
+
+.textAlignJustify {
+  text-align: justify;
+}
+
+
+/*Text Style*/
+.textStyleNormal {
+  font-style: normal;
+}
+
+.textStyleItalic {
+  font-style: italic;
+}
+
+.textStyleBold {
+  font-weight: bold;
+}
+
+.textStyleUnderline {
+  text-decoration: underline;
+}
+
+
+
+
+/*Divider*/
+/*color*/
+.dividerColorTersier {
+  color: maroon;
+  background-color: maroon;
+}
+
+.dividerColorSecondary {
+  color: tomato;
+  background-color: tomato;
+}
+
+.dividerColorPrimary {
+  color: beige;
+  background-color: beige;
+}
+
+
+/*Thickness*/
+.dividerThicknessThin {
+  height: 1px;
+}
+
+.dividerThicknessMedium {
+  height: 2px;
+}
+
+.dividerThicknessLarge {
+  height: 4px;
+}
+
+
+/*Length*/
+.dividerLengthShort {
+  width: 25%;
+}
+
+.dividerLengthMedium {
+  width: 50%;
+}
+
+.dividerLengthLong {
+  width: 75%;
+}
+
+.dividerLengthFull {
+  width: 100%;
+}
+
+
+
+
+/*Scrollable*/
+.scrollableVertical {
+  overflow-y: auto;
+}
+
+.scrollableHorizontal {
+  overflow-x: auto;
+}
+
+
+
+
+/*holder*/
+.holderImage {
+  overflow: hidden;
+  background-color: darkgray;
+  border-style: solid;
+  border-width: 1px;
+  border-color: maroon;
+  display: block;
+  text-align: center;
+}
