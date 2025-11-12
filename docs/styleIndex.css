@@ -2,7 +2,7 @@
 body {
   font-family: arial;
   font-size: 14px;
-  background-color: beige;
+  background-color: tomato;
 }
 
 
@@ -10,7 +10,7 @@ body {
 
 /*Id==============================================================================================================================*/
 #BodyId {
-  background-color: beige;
+  background-color: tomato;
 }
 
 #ContentBoxId {
