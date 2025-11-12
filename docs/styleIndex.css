@@ -1,12 +1,14 @@
+/*Html element==============================================================================================================================*/
 body {
   font-family: arial;
   font-size: 14px;
-  background-color: tomato;
+  background-color: beige;
 }
 
 
 
 
+/*Id==============================================================================================================================*/
 #BodyId {
   background-color: tomato;
 }
@@ -86,6 +88,9 @@ body {
 
 
 
+/*Class==============================================================================================================================*/
+
+/*constraint and alignment*/
 .flex {
   display: flex;
 }
@@ -121,6 +126,8 @@ body {
 
 
 
+/*Text Setting*/
+/*Text Alignement*/
 .textAlignCenter {
   text-align: center;
 }
@@ -138,6 +145,7 @@ body {
 }
 
 
+/*Text Style*/
 .textStyleNormal {
   font-style: normal;
 }
@@ -157,6 +165,8 @@ body {
 
 
 
+/*Divider*/
+/*color*/
 .dividerColorTersier {
   color: maroon;
   background-color: maroon;
@@ -173,6 +183,7 @@ body {
 }
 
 
+/*Thickness*/
 .dividerThicknessThin {
   height: 1px;
 }
@@ -186,6 +197,7 @@ body {
 }
 
 
+/*Length*/
 .dividerLengthShort {
   width: 25%;
 }
@@ -205,6 +217,7 @@ body {
 
 
 
+/*Scrollable*/
 .scrollableVertical {
   overflow-y: auto;
 }
@@ -216,6 +229,7 @@ body {
 
 
 
+/*holder*/
 .holderImage {
   overflow: hidden;
   background-color: darkgray;
