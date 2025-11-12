@@ -38,13 +38,13 @@ body {
 
 #ProductDescriptionId {
   color: black;
+  width: 67%;
 }
 
 #ProductImageId {
   min-height: 300px;
   max-height: 600px;
-  min-width: 500px;
-  max-width: 800px;
+  width: 33%;
 }
 
 #ProductCardId {
@@ -85,6 +85,11 @@ body {
   width: 350px;
 }
 
+#DownloadSectionId {
+  max-width: 500px;
+  min-width: 300px;
+}
+
 #SteamButton {
   border-color: maroon;
   border-radius: 0.2em;
@@ -104,6 +109,18 @@ body {
 }
 
 #DirectDownloadButton:hover {
+  background-color: maroon;
+  color: beige;
+}
+
+#PurchaseButton {
+  border-color: maroon;
+  border-radius: 0.2em;
+  background-color: tomato;
+  color: maroon;
+}
+
+#PurchaseButton:hover {
   background-color: maroon;
   color: beige;
 }
