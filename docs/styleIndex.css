@@ -125,6 +125,59 @@ body {
   color: beige;
 }
 
+#FooterId {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background-color: maroon;
+  color: beige;
+  padding: 10px;
+}
+
+#ContactButtonId {
+  border-radius: 0.2em;
+  border-width: 3px;
+  border-color: tomato;
+  background-color: maroon;
+  color: beige;
+}
+
+#ContactButtonId:hover {
+  border-color: tomato;
+  background-color: tomato;
+  color: maroon;
+}
+
+#InfoHolderId {
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsla(0, 0%, 0%, 0.3);
+}
+
+#InfoId {
+  margin: auto;
+  width: 400px;
+  height: auto;
+}
+
+#InfoCloseButtonId {
+  border-radius: 0.3em;
+  border-width: 3px;
+  border-color: rgb(221, 36, 36);
+  background-color: rgb(221, 36, 36);
+  color: rgb(223, 212, 212);
+}
+
+#InfoCloseButtonId:hover {
+  border-color: rgb(221, 36, 36);
+  background-color: rgb(215, 103, 103);
+  color: black;
+}
+
 
 
 
@@ -210,16 +263,19 @@ body {
 .dividerColorTersier {
   color: maroon;
   background-color: maroon;
+  border-color: maroon;
 }
 
 .dividerColorSecondary {
   color: tomato;
   background-color: tomato;
+  border-color: tomato;
 }
 
 .dividerColorPrimary {
   color: beige;
   background-color: beige;
+  border-color: beige;
 }
 
 
@@ -339,4 +395,24 @@ body {
 
 .margin50 {
   margin: 50px;
+}
+
+.marginY5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.marginY10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.marginY20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.marginY50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }

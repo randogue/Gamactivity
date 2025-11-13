@@ -28,7 +28,7 @@
           <div id="ProductImageId" class="holderImage">
             img or video
           </div>
-        </div>
+        </div> <!--ProductId-->
 
         <div id="ProductCardId" class="flex flexVertical">
           <div id="ProductCardTitleId">
@@ -40,7 +40,7 @@
             <div id="ProductCard" class="holderImage">img</div>
             <div id="ProductCard" class="holderImage">img</div>
           </div>
-        </div>
+        </div> <!--ProductCardId-->
 
         <hr class="dividerColorTersier dividerLengthMedium dividerThicknessThin"/>
 
@@ -80,12 +80,61 @@
             </div>
 
           </div>
-        </div>
+        </div><!--ProductDownload-->
+
+        <hr class="dividerColorTersier dividerLengthLong dividerThicknessMedium marginY20"/>
 
       </div><!--ContentBoxId-->
 
     </div><!--BodyId-->
 
+    <!--Contact Info-->
+    <div id="FooterId">
+      <div class="flex flexVertical textAlignCenter">
+        <h3 class="marginY10">CONTACT</h3>
+        <hr class="dividerColorSecondary dividerLengthFull dividerThicknessMedium"/>
+        <p>Email: xxxxxx@gmail.com</p>
+        <p>Phone: +xx xxx-xxxx-xxxx</p>
+        <div>
+          <button id="ContactButtonId" class="textStyleBold padding5"
+          onclick="showInfo()">
+            More Info
+          </button>
+        </div>
+      </div>
+    </div><!--FooterId-->
+
+
+    <!--Information popup-->
+    <div id="InfoHolderId" style="display: block;">
+
+      <div class="flex flexVertical flexAlignSpaceBetween" style="height: 100%;">
+        <div id="InfoId" class="boxTersier flex flexVertical flexAlignStart padding20">
+          <h2 class="marginRemoval">Contact Info</h2>
+          <p class="marginRemoval marginY10">Email: xxxxxx@gmail.com</p>
+          <p class="marginRemoval">Phone: +xx xxx-xxxx-xxxx</p>
+          <div class="flex flexHorizontal flexAlignCenter">
+            <div>
+              <button id="InfoCloseButtonId" class="padding5 textStyleBold margin10" onclick="closeInfo()">
+                Close
+              </button>
+            </div>
+          </div>
+        </div><!--InfoBox-->
+      </div>
+
+    </div> <!--InfoHolderId-->
+
+
+    <!--Scripts-->
+    <script>
+      function showInfo() {
+        infoHolder = document.getElementById('InfoHolderId').style = "display:block;"
+      }
+      function closeInfo() {
+        infoHolder = document.getElementById('InfoHolderId').style = "display:none;"
+      }
+    </script>
 
   </body>
   <!--codex-->
@@ -130,5 +179,9 @@
   margin10
   margin20
   margin50
+  marginY5
+  marginY10
+  marginY20
+  marginY50
   -->
 </html>
