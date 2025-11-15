@@ -5,6 +5,78 @@ body {
   background-color: tomato;
 }
 
+@media (max-width: 600px) { /*smaller than phone*/
+  #ProductId {
+    flex-direction: column;
+  }
+
+  #ProductDescriptionId {
+    width: 100%;
+  }
+
+  #ProductImageId {
+    width: 100%;
+  }
+
+  #ProductCard {
+    height: 100px;
+  }
+}
+
+@media (min-width: 600px) { /*Phone*/
+  #ProductId {
+    flex-direction: column;
+  }
+
+  #ProductDescriptionId {
+    width: 100%;
+  }
+
+  #ProductImageId {
+    width: 100%;
+  }
+
+  #ProductCard {
+    height: 100px;
+  }
+}
+
+@media (min-width: 768px) { /*Tablet*/
+  #ProductId {
+    flex-direction: column;
+  }
+
+  #ProductDescriptionId {
+    width: 100%;
+  }
+
+  #ProductImageId {
+    width: 100%;
+  }
+
+  #ProductCard {
+    height: 200px;
+  }
+}
+
+@media (min-width: 992px) { /*laptop or bigger*/
+  #ProductId {
+    flex-direction: row;
+  }
+
+  #ProductDescriptionId {
+    width: 67%;
+  }
+
+  #ProductImageId {
+    width: 33%;
+  }
+
+  #ProductCard {
+    height: 300px;
+  }
+}
+
 
 
 
@@ -25,7 +97,7 @@ body {
   border-color: maroon;
   border-radius: 1em;
   overflow: hidden;
-  width: 1000px;
+  width: 75%;
 }
 
 #TitleId {
@@ -38,27 +110,28 @@ body {
 
 #ProductDescriptionId {
   color: black;
-  width: 67%;
 }
 
 #ProductImageId {
   min-height: 300px;
   max-height: 600px;
-  width: 33%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #ProductCardId {
-  min-height: 200px;
+  height: max-content;
   border-style: dashed;
   border-color: tomato;
   border-width: 2px;
   height: auto;
   padding: 10px;
   margin: 20px;
+  padding-top: 0px;
 }
 
 #ProductCardTitleId {
-  translate: -5px -20px;
+  translate: -5px -10px;
   background-color: beige;
   width: 50px;
 }
@@ -81,13 +154,18 @@ body {
 
 #ProductCard {
   margin: 5px;
-  height: 200px;
-  width: 350px;
+  width:max-content;
+}
+
+#ProductCard img {
+  width: auto;
+  height:100%;
 }
 
 #DownloadSectionId {
   max-width: 500px;
   min-width: 300px;
+  width: 75%;
 }
 
 #SteamButton {
@@ -175,6 +253,35 @@ body {
 #InfoCloseButtonId:hover {
   border-color: rgb(221, 36, 36);
   background-color: rgb(215, 103, 103);
+  color: black;
+}
+
+#ImagePopupHolderId {
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsla(0, 0%, 0%, 0.3);
+}
+
+#ImagePopupId {
+  margin: auto;
+  width: 75%;
+  height: auto;
+}
+
+#ImagePopupCloseButtonId {
+  border-radius: 0.3em;
+  border-width: 3px;
+  border-color: rgb(36, 82, 221);
+  background-color: rgb(36, 82, 221);
+  color: rgb(223, 212, 212);
+}
+
+#ImagePopupCloseButtonId:hover {
+  border-color: rgb(36, 82, 221);
+  background-color: rgb(124, 151, 231);
   color: black;
 }
 

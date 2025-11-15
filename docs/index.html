@@ -30,15 +30,23 @@
           </div>
         </div> <!--ProductId-->
 
-        <div id="ProductCardId" class="flex flexVertical">
-          <div id="ProductCardTitleId">
+        <div id="ProductCardId">
+          <div id="ProductCardTitleId" class="flex flexVertical">
             <p class="textStyleBold">Images</p>
           </div>
           <div id="ProductCardContent" class="scrollableHorizontal">
-            <div id="ProductCard" class="holderImage">img</div>
-            <div id="ProductCard" class="holderImage">img</div>
-            <div id="ProductCard" class="holderImage">img</div>
-            <div id="ProductCard" class="holderImage">img</div>
+            <div id="ProductCard" class="holderImage">
+              <img src="images/Card1.png" alt="" onclick="clickImg('images/Card1.png')">
+            </div>
+            <div id="ProductCard" class="holderImage">
+              <img src="images/Card2.png" alt="" onclick="clickImg('images/Card2.png')">
+            </div>
+            <div id="ProductCard" class="holderImage">
+              <img src="images/Card3.png" alt="" onclick="clickImg('images/Card3.png')">
+            </div>
+            <div id="ProductCard" class="holderImage">
+              <img src="images/Card4.png" alt="" onclick="clickImg('images/Card4.png')">
+            </div>
           </div>
         </div> <!--ProductCardId-->
 
@@ -126,13 +134,41 @@
     </div> <!--InfoHolderId-->
 
 
+    <div id="ImagePopupHolderId" style="display: none;">
+
+      <div class="flex flexVertical flexAlignSpaceBetween" style="height: 100%;">
+        <div id="ImagePopupId" class="boxTersier flex flexVertical flexAlignStart padding10">
+          <img src="images/Card1.png" alt="" class="boxTersier paddingRemoval">
+          <div class="flex flexHorizontal flexAlignCenter">
+            <div>
+              <button id="ImagePopupCloseButtonId" class="padding5 textStyleBold margin10" onclick="closeImg()">
+                Close
+              </button>
+            </div>
+          </div>
+        </div><!--ImagePopupId-->
+      </div>
+
+    </div> <!--ImagePopupHolderId-->
+
+
     <!--Scripts-->
     <script>
       function showInfo() {
-        infoHolder = document.getElementById('InfoHolderId').style = "display:block;"
+        document.getElementById('InfoHolderId').style = "display:block;"
       }
       function closeInfo() {
-        infoHolder = document.getElementById('InfoHolderId').style = "display:none;"
+        document.getElementById('InfoHolderId').style = "display:none;"
+      }
+
+      function clickImg(imageUrl) {
+        let url = imageUrl.toString();
+        document.getElementById("ImagePopupHolderId").style = "display: block;"
+        document.getElementById("ImagePopupId").innerHTML = '<img src="images/Card1.png" alt="" class="boxTersier paddingRemoval"><div class="flex flexHorizontal flexAlignCenter"><div><button id="ImagePopupCloseButtonId" class="padding5 textStyleBold margin10" onclick="closeImg()">Close</button></div></div>';
+      }
+
+      function closeImg() {
+        document.getElementById("ImagePopupHolderId").style = "display: none;"
       }
     </script>
 
