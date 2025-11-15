@@ -23,10 +23,19 @@
         <!--Product Introduction or Info-->
         <div id="ProductId" class="flex flexHorizontal flexAlignSpaceBetween">
           <div id="ProductDescriptionId">
-            description
+            <h3>Endless Dungeon Trap</h3>
+            <p>
+              Is a fast paced endless runner game where you go through endlessly generating rooms with the goal of going through the most room you can. But beware... traps and threat lies ahead (or perhaps from behind).
+            </p>
+            <h3>
+              How to play:
+            </h3>
+            <p>
+              WASD for movement, SPACEBAR to jump, ESC to pause and unpause, and drag mouse for looking around.
+            </p>
           </div>
           <div id="ProductImageId" class="holderImage">
-            img or video
+            <img src="images/Card1.png" alt="">
           </div>
         </div> <!--ProductId-->
 
@@ -155,20 +164,25 @@
     <!--Scripts-->
     <script>
       function showInfo() {
-        document.getElementById('InfoHolderId').style = "display:block;"
+        document.getElementById('InfoHolderId').style = "display:block;";
       }
       function closeInfo() {
-        document.getElementById('InfoHolderId').style = "display:none;"
+        document.getElementById('InfoHolderId').style = "display:none;";
       }
 
       function clickImg(imageUrl) {
         let url = imageUrl.toString();
-        document.getElementById("ImagePopupHolderId").style = "display: block;"
-        document.getElementById("ImagePopupId").innerHTML = '<img src="images/Card1.png" alt="" class="boxTersier paddingRemoval"><div class="flex flexHorizontal flexAlignCenter"><div><button id="ImagePopupCloseButtonId" class="padding5 textStyleBold margin10" onclick="closeImg()">Close</button></div></div>';
+        if (url.length > 20) {
+          url = url.substring(0, 20);
+        }
+        if (url.substring(0, 11) === 'images/Card') {
+          document.getElementById("ImagePopupHolderId").style = "display: block;";
+          document.getElementById("ImagePopupId").innerHTML = '<img src="'+ url +'" alt="" class="boxTersier paddingRemoval"><div class="flex flexHorizontal flexAlignCenter"><div><button id="ImagePopupCloseButtonId" class="padding5 textStyleBold margin10" onclick="closeImg()">Close</button></div></div>';
+        }
       }
 
       function closeImg() {
-        document.getElementById("ImagePopupHolderId").style = "display: none;"
+        document.getElementById("ImagePopupHolderId").style = "display: none;";
       }
     </script>
 
